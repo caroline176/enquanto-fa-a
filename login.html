@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>fluxograma</title>
+  
+</head>
+
+<body>
+<script>
+   function faca() {
+    var usuário;
+    var senha;
+    var loop1;
+    var loop2;
+    
+    loop1 = true;
+    do {
+        do {
+            usuário = window.prompt('Enter a value for usuário');
+            if (usuário == "Carol") {
+                loop1 = false;
+            } else {
+                window.alert("Usuário incorreto, Tente Novamente");
+            }
+        } while (loop1 == true);
+        loop1 = false;
+        loop2 = true;
+        do {
+            senha = window.prompt('Enter a value for senha');
+            if (senha == "1234") {
+                loop2 = false;
+            } else {
+                window.alert("Senha incorreta, Tente Novamente");
+            }
+        } while (loop2 == true);
+    } while (loop1 == true);
+    loop2 = false;
+    window.alert("Bem Vindo");
+}
+
+function enquanto() {
+    var usuário;
+    var senha;
+    var loop1;
+    var loop2;
+    
+    loop1 = true;
+    while (loop1 == true) {
+        while (loop1 == true) {
+            usuário = window.prompt('Enter a value for usuário');
+            if (usuário == "carol") {
+                loop1 = false;
+            } else {
+                window.alert("Usuário incorreto, Tente Novamente");
+            }
+        }
+        loop1 = false;
+        loop2 = true;
+        while (loop2 == true) {
+            senha = window.prompt('Enter a value for senha');
+            if (senha == "1234") {
+                loop2 = false;
+            } else {
+                window.alert("Senha incorreta, Tente Novamente");
+            }
+        }
+    }
+    loop2 = false;
+    window.alert("Bem vindo");
+}
+
+</script>
+
+   <button onclick="enquanto()">Entrar (enquanto)</button>
+   <button onclick=faca()">Entrar (faça)</button>
+</body>
+
+</html>
+  
